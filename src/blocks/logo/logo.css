@@ -1,0 +1,18 @@
+.logo {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

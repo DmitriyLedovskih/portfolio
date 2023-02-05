@@ -1,0 +1,4 @@
+.projects__cards {
+  display: grid;
+  gap: 30px;
+}

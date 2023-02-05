@@ -1,0 +1,14 @@
+.header_active {
+  position: fixed;
+  background-color: #171717;
+  animation: activeHeader .6s alternate linear;
+}
+
+@keyframes activeHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

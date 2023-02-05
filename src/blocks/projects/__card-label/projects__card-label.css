@@ -1,0 +1,11 @@
+.projects__card-label {
+  display: inline-block;
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  z-index: 2;
+}

@@ -1,0 +1,21 @@
+.projects__card-image {
+  display: block;
+  cursor: zoom-in;
+  width: 100%;
+  max-height: 710px;
+  min-height: 410px;
+  object-fit: cover;
+  object-position: top;
+  transition: all .5s;
+}
+
+.projects__card-image:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 520px) {
+  .projects__card-image {
+    min-height: 210px;
+    max-height: 320px;
+  }
+}

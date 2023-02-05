@@ -1,0 +1,12 @@
+.popup__close-button {
+  background: url('../../../images/close-icon.svg') no-repeat center/cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
