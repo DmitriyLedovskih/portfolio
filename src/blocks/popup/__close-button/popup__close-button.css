@@ -10,3 +10,9 @@
   outline: none;
   z-index: 1;
 }
+
+@media screen and (max-width: 890px) {
+  .popup__close-button {
+    right: 0;
+  }  
+}

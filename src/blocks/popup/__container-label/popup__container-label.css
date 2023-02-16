@@ -1,7 +1,13 @@
 .popup__container-label {
   display: block;
-  text-align: center;
   font-size: 21px;
   line-height: 24px;
-  margin-top: 10px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 520px) {
+  .popup__container-label {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

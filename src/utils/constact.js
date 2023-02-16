@@ -7,22 +7,26 @@ export const cardArray = [
   {
     title: 'Место',
     link: 'https://dmitriyledovskih.github.io/mesto/',
-    image: projectMesto
+    image: projectMesto,
+    descr: 'Этот проект похож на социальную сеть. Можно добавлять, лайкать и удалять карточки, изменять профиль и аватарку, карточки сохраняются на сервере Яндекс.Практикума.'
   },
   {
     title: 'Путешествие по России',
     link: 'https://dmitriyledovskih.github.io/russian-travel/',
-    image: projectRussianTravel
+    image: projectRussianTravel,
+    descr: 'Адаптивный сайт о путешествие по России на поезде. Этот проект расскажет вам про интересные места России.'
   },
   {
     title: 'Куда бы я поехал',
     link: 'https://dmitriyledovskih.github.io/where-will-i-go/',
-    image: projectWhereWillIGo
+    image: projectWhereWillIGo,
+    descr: 'В этом проекте рассказывается о путешествиях и мыслях разных людей о них.'
   },
   {
     title: 'Научиться учиться',
     link: 'https://dmitriyledovskih.github.io/how-to-learn/',
-    image: projectHowToLearn
+    image: projectHowToLearn,
+    descr: 'Лендинг о современном и эффективном подходе к обучению.'
   }
 ];
 

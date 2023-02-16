@@ -2,6 +2,7 @@
   object-fit: cover;
   max-width: 750px;
   max-height: 450px;
+  width: 100%;
 }
 
 @media screen and (max-width: 720px) {

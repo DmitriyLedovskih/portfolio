@@ -1,0 +1,13 @@
+.projects__card-descr {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+}
+
+@media screen and (max-width: 520px) {
+  .projects__card-descr {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

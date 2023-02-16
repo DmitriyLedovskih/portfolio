@@ -5,6 +5,7 @@ export default class Card {
     this._template = document.querySelector(template).content.querySelector('.projects__card').cloneNode(true);
     this._cardImage = this._template.querySelector('.projects__card-image');
     this._cardLink = this._template.querySelector('.projects__card-link');
+    this._cardDescr = this._template.querySelector('.projects__card-descr');
   }
 
   createCard() {
@@ -12,6 +13,7 @@ export default class Card {
     this._cardImage.alt = `Проект: ${this._data.title}`;
     this._cardLink.textContent = this._data.title;
     this._cardLink.href = this._data.link;
+    this._cardDescr.textContent = this._data.descr;
     this._setEventListeners();
     return this._template;
   }

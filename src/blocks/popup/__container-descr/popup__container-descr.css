@@ -1,0 +1,13 @@
+.popup__container-descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+}
+
+@media screen and (max-width: 520px) {
+  .popup__container-descr {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
