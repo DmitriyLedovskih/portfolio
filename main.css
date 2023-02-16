@@ -25,9 +25,11 @@
 .intro__subtitle{color:#fff;font-size:18px;line-height:21px;margin:0;text-align:center}@media screen and (max-width:520px){.intro__subtitle{font-size:16px;line-height:18px}}
 .projects{background-color:#181414}
 .projects__cards{display:grid;gap:30px}
-.projects__card{box-shadow:0 5px 10px #303742;overflow:hidden;position:relative;text-align:center}.projects__card:before{background-color:hsla(0,0%,7%,.4);content:"";height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%;z-index:1}
+.projects__card{box-shadow:0 5px 10px #303742;overflow:hidden;position:relative;text-align:center}.projects__card:before{background-color:hsla(0,0%,7%,.7);content:"";height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%;z-index:1}
 .projects__card-image{cursor:zoom-in;display:block;max-height:710px;min-height:410px;-o-object-fit:cover;object-fit:cover;-o-object-position:top;object-position:top;transition:all .5s;width:100%}.projects__card-image:hover{transform:scale(1.1)}@media screen and (max-width:520px){.projects__card-image{max-height:320px;min-height:210px}}
-.projects__card-label{bottom:10px;display:inline-block;font-size:24px;left:50%;line-height:26px;margin:0;position:absolute;transform:translateX(-50%);z-index:2}
+.projects__card-content{bottom:10px;box-sizing:border-box;left:50%;padding:0 10px;position:absolute;transform:translateX(-50%);width:100%;z-index:2}
+.projects__card-label{display:inline-block;font-size:24px;line-height:26px;margin:0 0 10px}@media screen and (max-width:520px){.projects__card-label{font-size:18px;line-height:21px}}
+.projects__card-descr{color:#fff;font-size:16px;line-height:21px;margin:0}@media screen and (max-width:520px){.projects__card-descr{font-size:12px;line-height:14px}}
 .projects__card-link{display:block}
 .skills{background-color:#121212}
 .skills__list{align-items:center;display:flex;flex-wrap:wrap;gap:15px;justify-content:space-between;list-style:none;margin:0;padding:0}
@@ -48,8 +50,10 @@
 .footer__text{color:#fff;font-size:16px;line-height:18px;margin:0}@media screen and (max-width:420px){.footer__text{font-size:12px;line-height:14px}}
 .popup{align-items:center;background-color:hsla(0,0%,7%,.8);display:flex;height:100%;justify-content:center;left:0;opacity:0;position:fixed;top:0;transition:all .5s;visibility:hidden;width:100%;z-index:10}
 .popup_opened{opacity:1;visibility:visible}
-.popup__container-figure{position:relative}
-.popup__close-button{background:url(images/close-icon.5a72a4a5f5a4753c0cf7.svg) no-repeat 50%/cover;border:none;cursor:pointer;height:40px;outline:none;position:absolute;right:-40px;top:-40px;width:40px;z-index:1}
-.popup__container-image{max-height:450px;max-width:750px;-o-object-fit:cover;object-fit:cover}@media screen and (max-width:720px){.popup__container-image{max-width:100%}}@media screen and (max-width:520px){.popup__container-image{min-height:250px}}
-.popup__container-label{display:block;font-size:21px;line-height:24px;margin-top:10px;text-align:center}
+.popup__container-figure{box-sizing:border-box;margin:0;padding:0 10px;position:relative;text-align:center}@media screen and (max-width:890px){.popup__container-figure{width:100%}}
+.popup__close-button{background:url(images/close-icon.5a72a4a5f5a4753c0cf7.svg) no-repeat 50%/cover;border:none;cursor:pointer;height:40px;outline:none;position:absolute;right:-40px;top:-40px;width:40px;z-index:1}@media screen and (max-width:890px){.popup__close-button{right:0}}
+.popup__container-image{max-height:450px;max-width:750px;-o-object-fit:cover;object-fit:cover;width:100%}@media screen and (max-width:720px){.popup__container-image{max-width:100%}}@media screen and (max-width:520px){.popup__container-image{min-height:250px}}
+.popup__container-content{margin:0 auto;max-width:560px}
+.popup__container-label{display:block;font-size:21px;line-height:24px;margin:10px 0}@media screen and (max-width:520px){.popup__container-label{font-size:16px;line-height:18px}}
+.popup__container-descr{color:#fff;font-size:16px;line-height:21px;margin:0}@media screen and (max-width:520px){.popup__container-descr{font-size:12px;line-height:14px}}
 
