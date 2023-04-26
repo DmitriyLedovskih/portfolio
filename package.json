@@ -1,0 +1,23 @@
+{
+  "name": "my-site-vizitka",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriyLedovskih/portfolio.git"
+  },
+  "author": "Dmitriy Ledovskih",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitriyLedovskih/portfolio/issues"
+  },
+  "homepage": "https://github.com/DmitriyLedovskih/portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
