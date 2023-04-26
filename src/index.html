@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="app">
+  <!-- <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <a href="#body" class="logo">Дмитрий Ледовских</a>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Обо мне</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Портфолио</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>  -->
+  <div class="desktop">
+    <button class="element element_type_folder button">
+      <img src="<%=require('./images/folder_icon.svg')%>" alt="" class="element__icon">
+      <span class="element__title">Портфолио</span>
+    </button>
+    <button class="element element_type_file button">
+      <img src="<%=require('./images/file_icon.svg')%>" alt="" class="element__icon">
+      <span class="element__title">Обо мне</span>
+    </button>
+    <button class="element element_type_file button">
+      <img src="<%=require('./images/file_icon.svg')%>" alt="" class="element__icon">
+      <span class="element__title">Контакты</span>
+    </button>
+  </div>
+  <footer class="bottom__panel">
+    <ul class="bottom__panel-menu">
+      <li class="bottom__panel-item">
+        <button class="bottom__panel-button button">
+          <span class="bottom__panel-prompt">Обо мне</span>
+          <img src="<%=require('./images/person_icon.svg')%>" alt="" class="bottom__panel-icon">
+        </button>
+        <button class="bottom__panel-button button">
+          <span class="bottom__panel-prompt">Портфолио</span>
+          <img src="<%=require('./images/work_icon.svg')%>" alt="" class="bottom__panel-icon">
+        </button>
+        <button class="bottom__panel-button button">
+          <span class="bottom__panel-prompt">Контакты</span>
+          <img src="<%=require('./images/contact_icon.svg')%>" alt="" class="bottom__panel-icon">
+        </button>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
