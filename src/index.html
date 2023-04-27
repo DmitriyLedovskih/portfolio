@@ -7,55 +7,69 @@
   <title>Document</title>
 </head>
 <body class="app">
-  <!-- <header class="header">
-    <div class="container">
-      <div class="header__row">
-        <a href="#body" class="logo">Дмитрий Ледовских</a>
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Обо мне</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Портфолио</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>  -->
   <div class="desktop">
-    <button class="element element_type_folder button">
+    <button class="element element_type_folder button" data-modal-button="folder_portfolio_modal">
       <img src="<%=require('./images/folder_icon.svg')%>" alt="" class="element__icon">
       <span class="element__title">Портфолио</span>
     </button>
-    <button class="element element_type_file button">
+    <button class="element element_type_file button" data-modal-button="folder_about_modal">
       <img src="<%=require('./images/file_icon.svg')%>" alt="" class="element__icon">
       <span class="element__title">Обо мне</span>
     </button>
-    <button class="element element_type_file button">
+    <button class="element element_type_file button" data-modal-button="folder_contact_modal">
       <img src="<%=require('./images/file_icon.svg')%>" alt="" class="element__icon">
       <span class="element__title">Контакты</span>
     </button>
   </div>
   <footer class="bottom__panel">
+    <div></div>
     <ul class="bottom__panel-menu">
       <li class="bottom__panel-item">
-        <button class="bottom__panel-button button">
+        <button class="bottom__panel-button bottom__panel-element button">
           <span class="bottom__panel-prompt">Обо мне</span>
           <img src="<%=require('./images/person_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
-        <button class="bottom__panel-button button">
+        <button class="bottom__panel-button bottom__panel-element button">
           <span class="bottom__panel-prompt">Портфолио</span>
           <img src="<%=require('./images/work_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
-        <button class="bottom__panel-button button">
+        <button class="bottom__panel-button bottom__panel-element button">
           <span class="bottom__panel-prompt">Контакты</span>
           <img src="<%=require('./images/contact_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
       </li>
     </ul>
+    <button class="bottom__panel-info button bottom__panel-element">
+      <span class="bottom__panel-text bottom__panel-time">00:00</span>
+      <span class="bottom__panel-text bottom__panel-date"></span>
+    </button>
   </footer>
+  <div class="modal" data-modal="folder_portfolio_modal">
+    <div class="modal__container">
+      <div class="modal__header">
+        <h2 class="modal__title">Портфолио</h2>
+        <ul class="modal__buttons">
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_roll-up button">
+              <img src="<%=require('./images/line_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_full button">
+              <img src="<%=require('./images/fullscreen_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_close button">
+              <img src="<%=require('./images/close_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__content"></div>
+    </div>
+  </div>
+  <div class="modal" data-modal="folder_about_modal"></div>
+  <div class="modal" data-modal="folder_contact_modal"></div>
 </body>
 </html>
