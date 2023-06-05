@@ -25,15 +25,15 @@
     <div></div>
     <ul class="bottom__panel-menu">
       <li class="bottom__panel-item">
-        <button class="bottom__panel-button bottom__panel-element button">
+        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_about_modal">
           <span class="bottom__panel-prompt">Обо мне</span>
           <img src="<%=require('./images/person_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
-        <button class="bottom__panel-button bottom__panel-element button">
+        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_portfolio_modal">
           <span class="bottom__panel-prompt">Портфолио</span>
           <img src="<%=require('./images/work_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
-        <button class="bottom__panel-button bottom__panel-element button">
+        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_contact_modal">
           <span class="bottom__panel-prompt">Контакты</span>
           <img src="<%=require('./images/contact_icon.svg')%>" alt="" class="bottom__panel-icon">
         </button>
@@ -69,7 +69,74 @@
       <div class="modal__content"></div>
     </div>
   </div>
-  <div class="modal" data-modal="folder_about_modal"></div>
-  <div class="modal" data-modal="folder_contact_modal"></div>
+  <div class="modal" data-modal="folder_about_modal">
+    <div class="modal__container">
+      <div class="modal__header">
+        <h2 class="modal__title">Обо мне</h2>
+        <ul class="modal__buttons">
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_roll-up button">
+              <img src="<%=require('./images/line_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_full button">
+              <img src="<%=require('./images/fullscreen_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_close button">
+              <img src="<%=require('./images/close_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__content">
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+        <p class="modal__content-descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi esse nihil, magnam animi, quaerat consectetur quod ad minima a voluptatum eaque eligendi soluta ratione corrupti quas facilis accusantium quos.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="modal" data-modal="folder_contact_modal">
+    <div class="modal__container">
+      <div class="modal__header">
+        <h2 class="modal__title">Контакты</h2>
+        <ul class="modal__buttons">
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_roll-up button">
+              <img src="<%=require('./images/line_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_other modal__buttons-button_type_full button">
+              <img src="<%=require('./images/fullscreen_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+          <li class="modal__buttons-item">
+            <button class="modal__buttons-button modal__buttons-button_type_close button">
+              <img src="<%=require('./images/close_icon.svg')%>" alt="" class="modal__buttons-icon">
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__content"></div>
+    </div>
+  </div>
 </body>
 </html>
