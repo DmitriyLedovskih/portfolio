@@ -11,6 +11,14 @@ element.forEach((el: Element) => {
   });
 });
 
+document.body.addEventListener("click", (evt) =>
+  element.forEach((el: Element) => {
+    if (evt.target === evt.currentTarget) {
+      el.classList.remove("element_active");
+    }
+  })
+);
+
 class Modal {
   _modal: Element;
   _button: Element;

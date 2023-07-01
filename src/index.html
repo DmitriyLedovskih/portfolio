@@ -23,22 +23,27 @@
   </div>
   <footer class="bottom__panel">
     <div></div>
-    <ul class="bottom__panel-menu">
-      <li class="bottom__panel-item">
-        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_about_modal">
-          <span class="bottom__panel-prompt">Обо мне</span>
-          <img src="<%=require('./images/person_icon.svg')%>" alt="" class="bottom__panel-icon">
-        </button>
-        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_portfolio_modal">
-          <span class="bottom__panel-prompt">Портфолио</span>
-          <img src="<%=require('./images/work_icon.svg')%>" alt="" class="bottom__panel-icon">
-        </button>
-        <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_contact_modal">
-          <span class="bottom__panel-prompt">Контакты</span>
-          <img src="<%=require('./images/contact_icon.svg')%>" alt="" class="bottom__panel-icon">
-        </button>
-      </li>
-    </ul>
+    <div class="bottom__panel-block">
+      <button class="logo button bottom__panel-element">
+        <img src="<%=require('./images/person_icon.svg')%>" alt="" class="logo__image">
+      </button>
+      <ul class="bottom__panel-menu">
+        <li class="bottom__panel-item">
+          <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_about_modal">
+            <span class="bottom__panel-prompt">Обо мне</span>
+            <img src="<%=require('./images/person_icon.svg')%>" alt="" class="bottom__panel-icon">
+          </button>
+          <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_portfolio_modal">
+            <span class="bottom__panel-prompt">Портфолио</span>
+            <img src="<%=require('./images/work_icon.svg')%>" alt="" class="bottom__panel-icon">
+          </button>
+          <button class="bottom__panel-button bottom__panel-element button" data-modal-button-bottom-panel="folder_contact_modal">
+            <span class="bottom__panel-prompt">Контакты</span>
+            <img src="<%=require('./images/contact_icon.svg')%>" alt="" class="bottom__panel-icon">
+          </button>
+        </li>
+      </ul>
+    </div>
     <button class="bottom__panel-info button bottom__panel-element">
       <span class="bottom__panel-text bottom__panel-time">00:00</span>
       <span class="bottom__panel-text bottom__panel-date"></span>
